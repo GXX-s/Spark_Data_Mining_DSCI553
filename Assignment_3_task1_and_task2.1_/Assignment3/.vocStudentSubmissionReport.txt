@@ -1,0 +1,920 @@
+
+[Executed at: Mon Oct 25 3:18:47 PDT 2021]
+
+=======================================================
+task1 starting
+=======================================================
+21/10/25 03:15:43 WARN Utils: Your hostname, ip-172-31-28-67 resolves to a loopback address: 127.0.0.1; using 172.31.28.67 instead (on interface ens5)
+21/10/25 03:15:43 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+21/10/25 03:15:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/10/25 03:15:44 INFO SparkContext: Running Spark version 3.1.2
+21/10/25 03:15:44 INFO ResourceUtils: ==============================================================
+21/10/25 03:15:44 INFO ResourceUtils: No custom resources configured for spark.driver.
+21/10/25 03:15:44 INFO ResourceUtils: ==============================================================
+21/10/25 03:15:44 INFO SparkContext: Submitted application: task1
+21/10/25 03:15:44 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 4096, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+21/10/25 03:15:44 INFO ResourceProfile: Limiting resource is cpu
+21/10/25 03:15:44 INFO ResourceProfileManager: Added ResourceProfile id: 0
+21/10/25 03:15:44 INFO SecurityManager: Changing view acls to: ccc_v1_g_1c1d2_33551
+21/10/25 03:15:44 INFO SecurityManager: Changing modify acls to: ccc_v1_g_1c1d2_33551
+21/10/25 03:15:44 INFO SecurityManager: Changing view acls groups to: 
+21/10/25 03:15:44 INFO SecurityManager: Changing modify acls groups to: 
+21/10/25 03:15:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ccc_v1_g_1c1d2_33551); groups with view permissions: Set(); users  with modify permissions: Set(ccc_v1_g_1c1d2_33551); groups with modify permissions: Set()
+21/10/25 03:15:44 INFO Utils: Successfully started service 'sparkDriver' on port 43651.
+21/10/25 03:15:44 INFO SparkEnv: Registering MapOutputTracker
+21/10/25 03:15:44 INFO SparkEnv: Registering BlockManagerMaster
+21/10/25 03:15:44 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/10/25 03:15:44 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/10/25 03:15:44 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/10/25 03:15:44 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d4ce9245-c178-41fd-8263-76d99bad2918
+21/10/25 03:15:44 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/10/25 03:15:44 INFO SparkEnv: Registering OutputCommitCoordinator
+21/10/25 03:15:45 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/10/25 03:15:45 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.28.67:4040
+21/10/25 03:15:45 INFO Executor: Starting executor ID driver on host 172.31.28.67
+21/10/25 03:15:45 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35074.
+21/10/25 03:15:45 INFO NettyBlockTransferService: Server created on 172.31.28.67:35074
+21/10/25 03:15:45 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/10/25 03:15:45 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.28.67, 35074, None)
+21/10/25 03:15:45 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.28.67:35074 with 366.3 MiB RAM, BlockManagerId(driver, 172.31.28.67, 35074, None)
+21/10/25 03:15:45 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.28.67, 35074, None)
+21/10/25 03:15:45 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.28.67, 35074, None)
+21/10/25 03:15:45 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 293.9 KiB, free 366.0 MiB)
+21/10/25 03:15:45 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 366.0 MiB)
+21/10/25 03:15:45 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.31.28.67:35074 (size: 27.0 KiB, free: 366.3 MiB)
+21/10/25 03:15:45 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+21/10/25 03:15:46 INFO FileInputFormat: Total input files to process : 1
+21/10/25 03:15:46 INFO SparkContext: Starting job: runJob at PythonRDD.scala:166
+21/10/25 03:15:46 INFO DAGScheduler: Got job 0 (runJob at PythonRDD.scala:166) with 1 output partitions
+21/10/25 03:15:46 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at PythonRDD.scala:166)
+21/10/25 03:15:46 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:15:46 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:15:46 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:53), which has no missing parents
+21/10/25 03:15:46 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.0 KiB, free 366.0 MiB)
+21/10/25 03:15:46 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 366.0 MiB)
+21/10/25 03:15:46 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.31.28.67:35074 (size: 4.8 KiB, free: 366.3 MiB)
+21/10/25 03:15:46 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:46 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:46 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+21/10/25 03:15:46 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4582 bytes) taskResourceAssignments Map()
+21/10/25 03:15:46 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+21/10/25 03:15:46 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:15:47 INFO PythonRunner: Times: total = 427, boot = 409, init = 18, finish = 0
+21/10/25 03:15:47 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1472 bytes result sent to driver
+21/10/25 03:15:47 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 799 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:47 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+21/10/25 03:15:47 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 59608
+21/10/25 03:15:47 INFO DAGScheduler: ResultStage 0 (runJob at PythonRDD.scala:166) finished in 0.917 s
+21/10/25 03:15:47 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:15:47 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+21/10/25 03:15:47 INFO DAGScheduler: Job 0 finished: runJob at PythonRDD.scala:166, took 0.953574 s
+21/10/25 03:15:47 INFO SparkContext: Starting job: count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88
+21/10/25 03:15:47 INFO DAGScheduler: Registering RDD 4 (distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:86) as input to shuffle 0
+21/10/25 03:15:47 INFO DAGScheduler: Got job 1 (count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88) with 1 output partitions
+21/10/25 03:15:47 INFO DAGScheduler: Final stage: ResultStage 2 (count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88)
+21/10/25 03:15:47 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+21/10/25 03:15:47 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+21/10/25 03:15:47 INFO DAGScheduler: Submitting ShuffleMapStage 1 (PairwiseRDD[4] at distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:86), which has no missing parents
+21/10/25 03:15:47 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 13.3 KiB, free 366.0 MiB)
+21/10/25 03:15:47 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 7.6 KiB, free 366.0 MiB)
+21/10/25 03:15:47 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.31.28.67:35074 (size: 7.6 KiB, free: 366.3 MiB)
+21/10/25 03:15:47 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:47 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 1 (PairwiseRDD[4] at distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:86) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:47 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+21/10/25 03:15:47 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:15:47 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+21/10/25 03:15:47 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:15:47 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 172.31.28.67:35074 in memory (size: 4.8 KiB, free: 366.3 MiB)
+21/10/25 03:15:49 INFO PythonRunner: Times: total = 1763, boot = 3, init = 5, finish = 1755
+21/10/25 03:15:49 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1654 bytes result sent to driver
+21/10/25 03:15:49 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2097 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:49 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+21/10/25 03:15:49 INFO DAGScheduler: ShuffleMapStage 1 (distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:86) finished in 2.130 s
+21/10/25 03:15:49 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:15:49 INFO DAGScheduler: running: Set()
+21/10/25 03:15:49 INFO DAGScheduler: waiting: Set(ResultStage 2)
+21/10/25 03:15:49 INFO DAGScheduler: failed: Set()
+21/10/25 03:15:49 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[11] at count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88), which has no missing parents
+21/10/25 03:15:49 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 10.2 KiB, free 366.0 MiB)
+21/10/25 03:15:49 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.7 KiB, free 366.0 MiB)
+21/10/25 03:15:49 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.31.28.67:35074 (size: 5.7 KiB, free: 366.3 MiB)
+21/10/25 03:15:49 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (PythonRDD[11] at count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:49 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+21/10/25 03:15:49 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:15:49 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+21/10/25 03:15:49 INFO ShuffleBlockFetcherIterator: Getting 1 (284.1 KiB) non-empty blocks including 1 (284.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:15:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 7 ms
+21/10/25 03:15:49 INFO PythonRunner: Times: total = 22, boot = -369, init = 376, finish = 15
+21/10/25 03:15:49 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1613 bytes result sent to driver
+21/10/25 03:15:49 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 68 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:49 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+21/10/25 03:15:49 INFO DAGScheduler: ResultStage 2 (count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88) finished in 0.078 s
+21/10/25 03:15:49 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:15:49 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+21/10/25 03:15:49 INFO DAGScheduler: Job 1 finished: count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:88, took 2.232692 s
+21/10/25 03:15:49 INFO SparkContext: Starting job: count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89
+21/10/25 03:15:49 INFO DAGScheduler: Registering RDD 8 (distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:87) as input to shuffle 1
+21/10/25 03:15:49 INFO DAGScheduler: Got job 2 (count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89) with 1 output partitions
+21/10/25 03:15:49 INFO DAGScheduler: Final stage: ResultStage 4 (count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89)
+21/10/25 03:15:49 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+21/10/25 03:15:49 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+21/10/25 03:15:49 INFO DAGScheduler: Submitting ShuffleMapStage 3 (PairwiseRDD[8] at distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:87), which has no missing parents
+21/10/25 03:15:49 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 13.3 KiB, free 365.9 MiB)
+21/10/25 03:15:49 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 7.6 KiB, free 365.9 MiB)
+21/10/25 03:15:49 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.31.28.67:35074 (size: 7.6 KiB, free: 366.3 MiB)
+21/10/25 03:15:49 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:49 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (PairwiseRDD[8] at distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:87) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:49 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+21/10/25 03:15:49 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:15:49 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+21/10/25 03:15:49 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:15:50 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 172.31.28.67:35074 in memory (size: 5.7 KiB, free: 366.3 MiB)
+21/10/25 03:15:51 INFO PythonRunner: Times: total = 1780, boot = -41, init = 44, finish = 1777
+21/10/25 03:15:51 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1611 bytes result sent to driver
+21/10/25 03:15:51 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 1791 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:51 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+21/10/25 03:15:51 INFO DAGScheduler: ShuffleMapStage 3 (distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:87) finished in 1.801 s
+21/10/25 03:15:51 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:15:51 INFO DAGScheduler: running: Set()
+21/10/25 03:15:51 INFO DAGScheduler: waiting: Set(ResultStage 4)
+21/10/25 03:15:51 INFO DAGScheduler: failed: Set()
+21/10/25 03:15:51 INFO DAGScheduler: Submitting ResultStage 4 (PythonRDD[12] at count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89), which has no missing parents
+21/10/25 03:15:51 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 10.2 KiB, free 365.9 MiB)
+21/10/25 03:15:51 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 5.7 KiB, free 365.9 MiB)
+21/10/25 03:15:51 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.31.28.67:35074 (size: 5.7 KiB, free: 366.3 MiB)
+21/10/25 03:15:51 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (PythonRDD[12] at count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:51 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks resource profile 0
+21/10/25 03:15:51 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:15:51 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+21/10/25 03:15:51 INFO ShuffleBlockFetcherIterator: Getting 1 (609.1 KiB) non-empty blocks including 1 (609.1 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:15:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:15:51 INFO PythonRunner: Times: total = 22, boot = -15, init = 17, finish = 20
+21/10/25 03:15:51 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1613 bytes result sent to driver
+21/10/25 03:15:51 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 33 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:51 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+21/10/25 03:15:51 INFO DAGScheduler: ResultStage 4 (count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89) finished in 0.040 s
+21/10/25 03:15:51 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:15:51 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+21/10/25 03:15:51 INFO DAGScheduler: Job 2 finished: count at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:89, took 1.849165 s
+21/10/25 03:15:51 INFO SparkContext: Starting job: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95
+21/10/25 03:15:51 INFO DAGScheduler: Got job 3 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95) with 1 output partitions
+21/10/25 03:15:51 INFO DAGScheduler: Final stage: ResultStage 5 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95)
+21/10/25 03:15:51 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:15:51 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:15:51 INFO DAGScheduler: Submitting ResultStage 5 (PythonRDD[13] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95), which has no missing parents
+21/10/25 03:15:51 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 9.3 KiB, free 365.9 MiB)
+21/10/25 03:15:51 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 365.9 MiB)
+21/10/25 03:15:51 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.31.28.67:35074 (size: 5.3 KiB, free: 366.2 MiB)
+21/10/25 03:15:51 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (PythonRDD[13] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:51 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+21/10/25 03:15:51 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4582 bytes) taskResourceAssignments Map()
+21/10/25 03:15:51 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+21/10/25 03:15:51 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:15:51 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 172.31.28.67:35074 in memory (size: 5.7 KiB, free: 366.3 MiB)
+21/10/25 03:15:51 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 172.31.28.67:35074 in memory (size: 7.6 KiB, free: 366.3 MiB)
+21/10/25 03:15:52 INFO PythonRunner: Times: total = 1443, boot = -27, init = 29, finish = 1441
+21/10/25 03:15:52 INFO MemoryStore: Block taskresult_5 stored as bytes in memory (estimated size 13.9 MiB, free 352.1 MiB)
+21/10/25 03:15:52 INFO BlockManagerInfo: Added taskresult_5 in memory on 172.31.28.67:35074 (size: 13.9 MiB, free: 352.4 MiB)
+21/10/25 03:15:52 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 14533992 bytes result sent via BlockManager)
+21/10/25 03:15:52 INFO TransportClientFactory: Successfully created connection to /172.31.28.67:35074 after 35 ms (0 ms spent in bootstraps)
+21/10/25 03:15:52 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 1658 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:52 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+21/10/25 03:15:52 INFO DAGScheduler: ResultStage 5 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95) finished in 1.666 s
+21/10/25 03:15:52 INFO BlockManagerInfo: Removed taskresult_5 on 172.31.28.67:35074 in memory (size: 13.9 MiB, free: 366.3 MiB)
+21/10/25 03:15:52 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:15:52 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+21/10/25 03:15:52 INFO DAGScheduler: Job 3 finished: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:95, took 1.669257 s
+21/10/25 03:15:53 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:100
+21/10/25 03:15:53 INFO DAGScheduler: Registering RDD 15 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:99) as input to shuffle 2
+21/10/25 03:15:53 INFO DAGScheduler: Got job 4 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:100) with 1 output partitions
+21/10/25 03:15:53 INFO DAGScheduler: Final stage: ResultStage 7 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:100)
+21/10/25 03:15:53 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 6)
+21/10/25 03:15:53 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 6)
+21/10/25 03:15:53 INFO DAGScheduler: Submitting ShuffleMapStage 6 (PairwiseRDD[15] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:99), which has no missing parents
+21/10/25 03:15:53 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 343.6 KiB, free 365.6 MiB)
+21/10/25 03:15:53 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 325.3 KiB, free 365.3 MiB)
+21/10/25 03:15:53 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 172.31.28.67:35074 (size: 325.3 KiB, free: 365.9 MiB)
+21/10/25 03:15:53 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:53 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 6 (PairwiseRDD[15] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:99) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:53 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+21/10/25 03:15:53 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:15:53 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+21/10/25 03:15:53 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:15:53 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 172.31.28.67:35074 in memory (size: 5.3 KiB, free: 365.9 MiB)
+21/10/25 03:15:55 INFO PythonRunner: Times: total = 1963, boot = -538, init = 542, finish = 1959
+21/10/25 03:15:55 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 1611 bytes result sent to driver
+21/10/25 03:15:55 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 1974 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:55 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+21/10/25 03:15:55 INFO DAGScheduler: ShuffleMapStage 6 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:99) finished in 1.983 s
+21/10/25 03:15:55 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:15:55 INFO DAGScheduler: running: Set()
+21/10/25 03:15:55 INFO DAGScheduler: waiting: Set(ResultStage 7)
+21/10/25 03:15:55 INFO DAGScheduler: failed: Set()
+21/10/25 03:15:55 INFO DAGScheduler: Submitting ResultStage 7 (PythonRDD[18] at RDD at PythonRDD.scala:53), which has no missing parents
+21/10/25 03:15:55 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 10.6 KiB, free 365.3 MiB)
+21/10/25 03:15:55 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 365.3 MiB)
+21/10/25 03:15:55 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 172.31.28.67:35074 (size: 6.0 KiB, free: 365.9 MiB)
+21/10/25 03:15:55 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:55 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (PythonRDD[18] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:55 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks resource profile 0
+21/10/25 03:15:55 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 7) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:15:55 INFO Executor: Running task 0.0 in stage 7.0 (TID 7)
+21/10/25 03:15:55 INFO ShuffleBlockFetcherIterator: Getting 1 (2.5 MiB) non-empty blocks including 1 (2.5 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:15:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:15:55 INFO PythonRunner: Times: total = 233, boot = -15, init = 17, finish = 231
+21/10/25 03:15:55 INFO MemoryStore: Block rdd_18_0 stored as values in memory (estimated size 2.3 MiB, free 363.0 MiB)
+21/10/25 03:15:55 INFO BlockManagerInfo: Added rdd_18_0 in memory on 172.31.28.67:35074 (size: 2.3 MiB, free: 363.7 MiB)
+21/10/25 03:15:55 INFO MemoryStore: Block taskresult_7 stored as bytes in memory (estimated size 2.9 MiB, free 360.1 MiB)
+21/10/25 03:15:55 INFO BlockManagerInfo: Added taskresult_7 in memory on 172.31.28.67:35074 (size: 2.9 MiB, free: 360.8 MiB)
+21/10/25 03:15:55 INFO Executor: Finished task 0.0 in stage 7.0 (TID 7). 3063622 bytes result sent via BlockManager)
+21/10/25 03:15:55 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 7) in 280 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:15:55 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+21/10/25 03:15:55 INFO BlockManagerInfo: Removed taskresult_7 on 172.31.28.67:35074 in memory (size: 2.9 MiB, free: 363.7 MiB)
+21/10/25 03:15:55 INFO DAGScheduler: ResultStage 7 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:100) finished in 0.288 s
+21/10/25 03:15:55 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:15:55 INFO TaskSchedulerImpl: Killing all running tasks in stage 7: Stage finished
+21/10/25 03:15:55 INFO DAGScheduler: Job 4 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:100, took 2.279005 s
+21/10/25 03:15:56 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 312.0 B, free 363.0 MiB)
+21/10/25 03:15:56 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 2.3 MiB, free 360.8 MiB)
+21/10/25 03:15:56 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 172.31.28.67:35074 (size: 2.3 MiB, free: 361.4 MiB)
+21/10/25 03:15:56 INFO SparkContext: Created broadcast 9 from collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114
+21/10/25 03:15:56 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114
+21/10/25 03:15:56 INFO DAGScheduler: Registering RDD 20 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:109) as input to shuffle 4
+21/10/25 03:15:56 INFO DAGScheduler: Registering RDD 24 (distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:110) as input to shuffle 3
+21/10/25 03:15:56 INFO DAGScheduler: Got job 5 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114) with 1 output partitions
+21/10/25 03:15:56 INFO DAGScheduler: Final stage: ResultStage 11 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114)
+21/10/25 03:15:56 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+21/10/25 03:15:56 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10)
+21/10/25 03:15:56 INFO DAGScheduler: Submitting ShuffleMapStage 9 (PairwiseRDD[20] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:109), which has no missing parents
+21/10/25 03:15:56 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 17.1 KiB, free 360.8 MiB)
+21/10/25 03:15:56 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 8.6 KiB, free 360.7 MiB)
+21/10/25 03:15:56 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.31.28.67:35074 (size: 8.6 KiB, free: 361.4 MiB)
+21/10/25 03:15:56 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:15:56 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 9 (PairwiseRDD[20] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:109) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:15:56 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks resource profile 0
+21/10/25 03:15:56 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 8) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4260 bytes) taskResourceAssignments Map()
+21/10/25 03:15:56 INFO Executor: Running task 0.0 in stage 9.0 (TID 8)
+21/10/25 03:15:56 INFO BlockManager: Found block rdd_18_0 locally
+21/10/25 03:16:12 INFO PythonRunner: Times: total = 15939, boot = -1138, init = 1140, finish = 15937
+21/10/25 03:16:12 INFO Executor: Finished task 0.0 in stage 9.0 (TID 8). 1568 bytes result sent to driver
+21/10/25 03:16:12 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 8) in 15955 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:12 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+21/10/25 03:16:12 INFO DAGScheduler: ShuffleMapStage 9 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:109) finished in 15.963 s
+21/10/25 03:16:12 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:16:12 INFO DAGScheduler: running: Set()
+21/10/25 03:16:12 INFO DAGScheduler: waiting: Set(ShuffleMapStage 10, ResultStage 11)
+21/10/25 03:16:12 INFO DAGScheduler: failed: Set()
+21/10/25 03:16:12 INFO DAGScheduler: Submitting ShuffleMapStage 10 (PairwiseRDD[24] at distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:110), which has no missing parents
+21/10/25 03:16:12 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 13.7 KiB, free 360.7 MiB)
+21/10/25 03:16:12 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 7.6 KiB, free 360.7 MiB)
+21/10/25 03:16:12 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 172.31.28.67:35074 (size: 7.6 KiB, free: 361.4 MiB)
+21/10/25 03:16:12 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:12 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 10 (PairwiseRDD[24] at distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:110) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:12 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks resource profile 0
+21/10/25 03:16:12 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 9) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+21/10/25 03:16:12 INFO Executor: Running task 0.0 in stage 10.0 (TID 9)
+21/10/25 03:16:12 INFO ShuffleBlockFetcherIterator: Getting 1 (12.6 MiB) non-empty blocks including 1 (12.6 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:16:12 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:16:23 INFO PythonRunner: Times: total = 10853, boot = -20, init = 22, finish = 10851
+21/10/25 03:16:23 INFO Executor: Finished task 0.0 in stage 10.0 (TID 9). 1783 bytes result sent to driver
+21/10/25 03:16:23 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 9) in 10870 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:23 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+21/10/25 03:16:23 INFO DAGScheduler: ShuffleMapStage 10 (distinct at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:110) finished in 10.877 s
+21/10/25 03:16:23 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:16:23 INFO DAGScheduler: running: Set()
+21/10/25 03:16:23 INFO DAGScheduler: waiting: Set(ResultStage 11)
+21/10/25 03:16:23 INFO DAGScheduler: failed: Set()
+21/10/25 03:16:23 INFO DAGScheduler: Submitting ResultStage 11 (PythonRDD[27] at collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114), which has no missing parents
+21/10/25 03:16:23 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 7.1 KiB, free 360.7 MiB)
+21/10/25 03:16:23 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 4.0 KiB, free 360.7 MiB)
+21/10/25 03:16:23 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 172.31.28.67:35074 (size: 4.0 KiB, free: 361.4 MiB)
+21/10/25 03:16:23 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:23 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (PythonRDD[27] at collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:23 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks resource profile 0
+21/10/25 03:16:23 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 10) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:16:23 INFO Executor: Running task 0.0 in stage 11.0 (TID 10)
+21/10/25 03:16:23 INFO ShuffleBlockFetcherIterator: Getting 1 (9.4 MiB) non-empty blocks including 1 (9.4 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:16:23 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:16:30 INFO PythonRunner: Times: total = 7077, boot = -18, init = 93, finish = 7002
+21/10/25 03:16:30 INFO Executor: Finished task 0.0 in stage 11.0 (TID 10). 37589 bytes result sent to driver
+21/10/25 03:16:30 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 10) in 7086 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:30 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+21/10/25 03:16:30 INFO DAGScheduler: ResultStage 11 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114) finished in 7.092 s
+21/10/25 03:16:30 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:30 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+21/10/25 03:16:30 INFO DAGScheduler: Job 5 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task1.py:114, took 33.944948 s
+output count:  639
+total time: 45.05545115470886
+21/10/25 03:16:30 INFO SparkUI: Stopped Spark web UI at http://172.31.28.67:4040
+21/10/25 03:16:30 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/10/25 03:16:30 INFO MemoryStore: MemoryStore cleared
+21/10/25 03:16:30 INFO BlockManager: BlockManager stopped
+21/10/25 03:16:30 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/10/25 03:16:30 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/10/25 03:16:30 INFO SparkContext: Successfully stopped SparkContext
+21/10/25 03:16:30 INFO ShutdownHookManager: Shutdown hook called
+21/10/25 03:16:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-3c189b51-5df0-437a-ac6e-c37daaf463f7
+21/10/25 03:16:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-668c88b3-5ffa-4df2-8920-3b645b9bc5eb
+21/10/25 03:16:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-668c88b3-5ffa-4df2-8920-3b645b9bc5eb/pyspark-9f9a0d21-596a-42c8-84a7-fee53c7b6996
+=======================================================
+task2_1 starting
+=======================================================
+21/10/25 03:16:31 WARN Utils: Your hostname, ip-172-31-28-67 resolves to a loopback address: 127.0.0.1; using 172.31.28.67 instead (on interface ens5)
+21/10/25 03:16:31 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+21/10/25 03:16:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/10/25 03:16:32 INFO SparkContext: Running Spark version 3.1.2
+21/10/25 03:16:32 INFO ResourceUtils: ==============================================================
+21/10/25 03:16:32 INFO ResourceUtils: No custom resources configured for spark.driver.
+21/10/25 03:16:32 INFO ResourceUtils: ==============================================================
+21/10/25 03:16:32 INFO SparkContext: Submitted application: task1
+21/10/25 03:16:32 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 4096, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+21/10/25 03:16:32 INFO ResourceProfile: Limiting resource is cpu
+21/10/25 03:16:32 INFO ResourceProfileManager: Added ResourceProfile id: 0
+21/10/25 03:16:32 INFO SecurityManager: Changing view acls to: ccc_v1_g_1c1d2_33551
+21/10/25 03:16:32 INFO SecurityManager: Changing modify acls to: ccc_v1_g_1c1d2_33551
+21/10/25 03:16:32 INFO SecurityManager: Changing view acls groups to: 
+21/10/25 03:16:32 INFO SecurityManager: Changing modify acls groups to: 
+21/10/25 03:16:32 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ccc_v1_g_1c1d2_33551); groups with view permissions: Set(); users  with modify permissions: Set(ccc_v1_g_1c1d2_33551); groups with modify permissions: Set()
+21/10/25 03:16:33 INFO Utils: Successfully started service 'sparkDriver' on port 34292.
+21/10/25 03:16:33 INFO SparkEnv: Registering MapOutputTracker
+21/10/25 03:16:33 INFO SparkEnv: Registering BlockManagerMaster
+21/10/25 03:16:33 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/10/25 03:16:33 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/10/25 03:16:33 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/10/25 03:16:33 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-393df583-9b6a-401d-bd35-96c282e6de88
+21/10/25 03:16:33 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/10/25 03:16:33 INFO SparkEnv: Registering OutputCommitCoordinator
+21/10/25 03:16:33 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/10/25 03:16:33 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.28.67:4040
+21/10/25 03:16:33 INFO Executor: Starting executor ID driver on host 172.31.28.67
+21/10/25 03:16:33 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37093.
+21/10/25 03:16:33 INFO NettyBlockTransferService: Server created on 172.31.28.67:37093
+21/10/25 03:16:33 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/10/25 03:16:33 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.28.67, 37093, None)
+21/10/25 03:16:33 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.28.67:37093 with 366.3 MiB RAM, BlockManagerId(driver, 172.31.28.67, 37093, None)
+21/10/25 03:16:33 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.28.67, 37093, None)
+21/10/25 03:16:33 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.28.67, 37093, None)
+21/10/25 03:16:34 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 293.9 KiB, free 366.0 MiB)
+21/10/25 03:16:34 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 366.0 MiB)
+21/10/25 03:16:34 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.31.28.67:37093 (size: 27.0 KiB, free: 366.3 MiB)
+21/10/25 03:16:34 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:34 INFO FileInputFormat: Total input files to process : 1
+21/10/25 03:16:34 INFO SparkContext: Starting job: runJob at PythonRDD.scala:166
+21/10/25 03:16:34 INFO DAGScheduler: Got job 0 (runJob at PythonRDD.scala:166) with 1 output partitions
+21/10/25 03:16:34 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at PythonRDD.scala:166)
+21/10/25 03:16:34 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:16:34 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:16:34 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:53), which has no missing parents
+21/10/25 03:16:34 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.0 KiB, free 366.0 MiB)
+21/10/25 03:16:34 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.9 KiB, free 366.0 MiB)
+21/10/25 03:16:34 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.31.28.67:37093 (size: 4.9 KiB, free: 366.3 MiB)
+21/10/25 03:16:34 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:34 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+21/10/25 03:16:34 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4582 bytes) taskResourceAssignments Map()
+21/10/25 03:16:34 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+21/10/25 03:16:34 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:16:35 INFO PythonRunner: Times: total = 409, boot = 393, init = 16, finish = 0
+21/10/25 03:16:35 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1429 bytes result sent to driver
+21/10/25 03:16:35 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 746 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:35 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+21/10/25 03:16:35 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 47255
+21/10/25 03:16:35 INFO DAGScheduler: ResultStage 0 (runJob at PythonRDD.scala:166) finished in 0.870 s
+21/10/25 03:16:35 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+21/10/25 03:16:35 INFO DAGScheduler: Job 0 finished: runJob at PythonRDD.scala:166, took 0.928754 s
+21/10/25 03:16:35 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 172.31.28.67:37093 in memory (size: 4.9 KiB, free: 366.3 MiB)
+21/10/25 03:16:35 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 293.9 KiB, free 365.7 MiB)
+21/10/25 03:16:35 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 27.0 KiB, free 365.7 MiB)
+21/10/25 03:16:35 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.31.28.67:37093 (size: 27.0 KiB, free: 366.2 MiB)
+21/10/25 03:16:35 INFO SparkContext: Created broadcast 2 from textFile at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:35 INFO FileInputFormat: Total input files to process : 1
+21/10/25 03:16:35 INFO SparkContext: Starting job: runJob at PythonRDD.scala:166
+21/10/25 03:16:35 INFO DAGScheduler: Got job 1 (runJob at PythonRDD.scala:166) with 1 output partitions
+21/10/25 03:16:35 INFO DAGScheduler: Final stage: ResultStage 1 (runJob at PythonRDD.scala:166)
+21/10/25 03:16:35 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:16:35 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:16:35 INFO DAGScheduler: Submitting ResultStage 1 (PythonRDD[5] at RDD at PythonRDD.scala:53), which has no missing parents
+21/10/25 03:16:35 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 8.0 KiB, free 365.7 MiB)
+21/10/25 03:16:35 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.9 KiB, free 365.7 MiB)
+21/10/25 03:16:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.31.28.67:37093 (size: 4.9 KiB, free: 366.2 MiB)
+21/10/25 03:16:35 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (PythonRDD[5] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:35 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+21/10/25 03:16:35 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4583 bytes) taskResourceAssignments Map()
+21/10/25 03:16:35 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+21/10/25 03:16:35 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_val_in.csv:0+6676095
+21/10/25 03:16:35 INFO PythonRunner: Times: total = 9, boot = 3, init = 6, finish = 0
+21/10/25 03:16:35 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1429 bytes result sent to driver
+21/10/25 03:16:35 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 24 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:35 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+21/10/25 03:16:35 INFO DAGScheduler: ResultStage 1 (runJob at PythonRDD.scala:166) finished in 0.032 s
+21/10/25 03:16:35 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+21/10/25 03:16:35 INFO DAGScheduler: Job 1 finished: runJob at PythonRDD.scala:166, took 0.035856 s
+21/10/25 03:16:35 INFO SparkContext: Starting job: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211
+21/10/25 03:16:35 INFO DAGScheduler: Got job 2 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211) with 1 output partitions
+21/10/25 03:16:35 INFO DAGScheduler: Final stage: ResultStage 2 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211)
+21/10/25 03:16:35 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:16:35 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:16:35 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[6] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211), which has no missing parents
+21/10/25 03:16:35 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 8.2 KiB, free 365.7 MiB)
+21/10/25 03:16:35 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 365.6 MiB)
+21/10/25 03:16:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.31.28.67:37093 (size: 4.8 KiB, free: 366.2 MiB)
+21/10/25 03:16:35 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (PythonRDD[6] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:35 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+21/10/25 03:16:35 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4582 bytes) taskResourceAssignments Map()
+21/10/25 03:16:35 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+21/10/25 03:16:35 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:16:36 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 172.31.28.67:37093 in memory (size: 4.9 KiB, free: 366.2 MiB)
+21/10/25 03:16:37 INFO PythonRunner: Times: total = 1777, boot = 2, init = 4, finish = 1771
+21/10/25 03:16:37 INFO MemoryStore: Block taskresult_2 stored as bytes in memory (estimated size 27.5 MiB, free 338.1 MiB)
+21/10/25 03:16:37 INFO BlockManagerInfo: Added taskresult_2 in memory on 172.31.28.67:37093 (size: 27.5 MiB, free: 338.7 MiB)
+21/10/25 03:16:37 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 28869474 bytes result sent via BlockManager)
+21/10/25 03:16:37 INFO TransportClientFactory: Successfully created connection to /172.31.28.67:37093 after 29 ms (0 ms spent in bootstraps)
+21/10/25 03:16:37 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 2099 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:37 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+21/10/25 03:16:37 INFO BlockManagerInfo: Removed taskresult_2 on 172.31.28.67:37093 in memory (size: 27.5 MiB, free: 366.2 MiB)
+21/10/25 03:16:37 INFO DAGScheduler: ResultStage 2 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211) finished in 2.109 s
+21/10/25 03:16:37 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+21/10/25 03:16:37 INFO DAGScheduler: Job 2 finished: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:211, took 2.112503 s
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 312.0 B, free 365.7 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 361.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 362.2 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 357.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_5_piece1 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 358.2 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 353.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_5_piece2 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 354.2 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 349.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_5_piece3 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 350.2 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 345.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_5_piece4 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 346.2 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_5_piece5 stored as bytes in memory (estimated size 2.0 MiB, free 343.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_5_piece5 in memory on 172.31.28.67:37093 (size: 2.0 MiB, free: 344.2 MiB)
+21/10/25 03:16:38 INFO SparkContext: Created broadcast 5 from broadcast at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 172.31.28.67:37093 in memory (size: 4.8 KiB, free: 344.2 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_5_piece4 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 348.2 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_5_piece5 on 172.31.28.67:37093 in memory (size: 2.0 MiB, free: 350.2 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 354.2 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_5_piece1 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 358.2 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_5_piece3 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 362.2 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Removed broadcast_5_piece2 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 366.2 MiB)
+21/10/25 03:16:38 INFO SparkContext: Starting job: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214
+21/10/25 03:16:38 INFO DAGScheduler: Registering RDD 8 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214) as input to shuffle 0
+21/10/25 03:16:38 INFO DAGScheduler: Got job 3 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214) with 1 output partitions
+21/10/25 03:16:38 INFO DAGScheduler: Final stage: ResultStage 4 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214)
+21/10/25 03:16:38 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+21/10/25 03:16:38 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+21/10/25 03:16:38 INFO DAGScheduler: Submitting ShuffleMapStage 3 (PairwiseRDD[8] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214), which has no missing parents
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 13.3 KiB, free 365.7 MiB)
+21/10/25 03:16:38 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 7.6 KiB, free 365.7 MiB)
+21/10/25 03:16:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.31.28.67:37093 (size: 7.6 KiB, free: 366.2 MiB)
+21/10/25 03:16:38 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:38 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (PairwiseRDD[8] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:38 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+21/10/25 03:16:38 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:16:38 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+21/10/25 03:16:38 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:16:40 INFO PythonRunner: Times: total = 2083, boot = -1591, init = 1593, finish = 2081
+21/10/25 03:16:41 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1611 bytes result sent to driver
+21/10/25 03:16:41 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 2120 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:41 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+21/10/25 03:16:41 INFO DAGScheduler: ShuffleMapStage 3 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214) finished in 2.148 s
+21/10/25 03:16:41 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:16:41 INFO DAGScheduler: running: Set()
+21/10/25 03:16:41 INFO DAGScheduler: waiting: Set(ResultStage 4)
+21/10/25 03:16:41 INFO DAGScheduler: failed: Set()
+21/10/25 03:16:41 INFO DAGScheduler: Submitting ResultStage 4 (PythonRDD[11] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214), which has no missing parents
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 10.6 KiB, free 365.6 MiB)
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 365.6 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 172.31.28.67:37093 (size: 6.0 KiB, free: 366.2 MiB)
+21/10/25 03:16:41 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (PythonRDD[11] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:41 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks resource profile 0
+21/10/25 03:16:41 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:16:41 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+21/10/25 03:16:41 INFO ShuffleBlockFetcherIterator: Getting 1 (10.4 MiB) non-empty blocks including 1 (10.4 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:16:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+21/10/25 03:16:41 INFO PythonRunner: Times: total = 268, boot = -65, init = 73, finish = 260
+21/10/25 03:16:41 INFO MemoryStore: Block taskresult_4 stored as bytes in memory (estimated size 11.3 MiB, free 354.4 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Added taskresult_4 in memory on 172.31.28.67:37093 (size: 11.3 MiB, free: 355.0 MiB)
+21/10/25 03:16:41 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 11808415 bytes result sent via BlockManager)
+21/10/25 03:16:41 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 346 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:41 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+21/10/25 03:16:41 INFO BlockManagerInfo: Removed taskresult_4 on 172.31.28.67:37093 in memory (size: 11.3 MiB, free: 366.2 MiB)
+21/10/25 03:16:41 INFO DAGScheduler: ResultStage 4 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214) finished in 0.355 s
+21/10/25 03:16:41 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+21/10/25 03:16:41 INFO DAGScheduler: Job 3 finished: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:214, took 2.522880 s
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 312.0 B, free 365.6 MiB)
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 361.6 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 362.2 MiB)
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_8_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 357.6 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Added broadcast_8_piece1 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 358.2 MiB)
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_8_piece2 stored as bytes in memory (estimated size 2.4 MiB, free 355.3 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Added broadcast_8_piece2 in memory on 172.31.28.67:37093 (size: 2.4 MiB, free: 355.9 MiB)
+21/10/25 03:16:41 INFO SparkContext: Created broadcast 8 from broadcast at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:41 INFO SparkContext: Starting job: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218
+21/10/25 03:16:41 INFO DAGScheduler: Registering RDD 13 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218) as input to shuffle 1
+21/10/25 03:16:41 INFO DAGScheduler: Got job 4 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218) with 1 output partitions
+21/10/25 03:16:41 INFO DAGScheduler: Final stage: ResultStage 6 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218)
+21/10/25 03:16:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 5)
+21/10/25 03:16:41 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 5)
+21/10/25 03:16:41 INFO DAGScheduler: Submitting ShuffleMapStage 5 (PairwiseRDD[13] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218), which has no missing parents
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 13.3 KiB, free 355.3 MiB)
+21/10/25 03:16:41 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 7.6 KiB, free 355.2 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 172.31.28.67:37093 (size: 7.6 KiB, free: 355.9 MiB)
+21/10/25 03:16:41 INFO BlockManagerInfo: Removed broadcast_8_piece2 on 172.31.28.67:37093 in memory (size: 2.4 MiB, free: 358.2 MiB)
+21/10/25 03:16:41 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:41 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 362.2 MiB)
+21/10/25 03:16:41 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 5 (PairwiseRDD[13] at groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:41 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+21/10/25 03:16:41 INFO BlockManagerInfo: Removed broadcast_8_piece1 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 366.2 MiB)
+21/10/25 03:16:41 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:16:41 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+21/10/25 03:16:41 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 172.31.28.67:37093 in memory (size: 7.6 KiB, free: 366.2 MiB)
+21/10/25 03:16:41 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:16:41 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 172.31.28.67:37093 in memory (size: 6.0 KiB, free: 366.2 MiB)
+21/10/25 03:16:43 INFO PythonRunner: Times: total = 1950, boot = -503, init = 506, finish = 1947
+21/10/25 03:16:43 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 1611 bytes result sent to driver
+21/10/25 03:16:43 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 1966 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:43 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+21/10/25 03:16:43 INFO DAGScheduler: ShuffleMapStage 5 (groupByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218) finished in 1.979 s
+21/10/25 03:16:43 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:16:43 INFO DAGScheduler: running: Set()
+21/10/25 03:16:43 INFO DAGScheduler: waiting: Set(ResultStage 6)
+21/10/25 03:16:43 INFO DAGScheduler: failed: Set()
+21/10/25 03:16:43 INFO DAGScheduler: Submitting ResultStage 6 (PythonRDD[16] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218), which has no missing parents
+21/10/25 03:16:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 10.6 KiB, free 365.6 MiB)
+21/10/25 03:16:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 365.6 MiB)
+21/10/25 03:16:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.31.28.67:37093 (size: 6.0 KiB, free: 366.2 MiB)
+21/10/25 03:16:43 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (PythonRDD[16] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:43 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+21/10/25 03:16:43 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:16:43 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+21/10/25 03:16:43 INFO ShuffleBlockFetcherIterator: Getting 1 (11.4 MiB) non-empty blocks including 1 (11.4 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:16:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:16:44 INFO PythonRunner: Times: total = 320, boot = -19, init = 21, finish = 318
+21/10/25 03:16:44 INFO MemoryStore: Block taskresult_6 stored as bytes in memory (estimated size 11.7 MiB, free 354.0 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Added taskresult_6 in memory on 172.31.28.67:37093 (size: 11.7 MiB, free: 354.6 MiB)
+21/10/25 03:16:44 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 12227878 bytes result sent via BlockManager)
+21/10/25 03:16:44 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 385 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:44 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+21/10/25 03:16:44 INFO BlockManagerInfo: Removed taskresult_6 on 172.31.28.67:37093 in memory (size: 11.7 MiB, free: 366.2 MiB)
+21/10/25 03:16:44 INFO DAGScheduler: ResultStage 6 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218) finished in 0.391 s
+21/10/25 03:16:44 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:44 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+21/10/25 03:16:44 INFO DAGScheduler: Job 4 finished: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:218, took 2.376621 s
+21/10/25 03:16:44 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 312.0 B, free 365.6 MiB)
+21/10/25 03:16:44 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 361.6 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 362.2 MiB)
+21/10/25 03:16:44 INFO MemoryStore: Block broadcast_11_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 357.6 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Added broadcast_11_piece1 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 358.2 MiB)
+21/10/25 03:16:44 INFO MemoryStore: Block broadcast_11_piece2 stored as bytes in memory (estimated size 2.5 MiB, free 355.1 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Added broadcast_11_piece2 in memory on 172.31.28.67:37093 (size: 2.5 MiB, free: 355.7 MiB)
+21/10/25 03:16:44 INFO SparkContext: Created broadcast 11 from broadcast at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:44 INFO SparkContext: Starting job: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224
+21/10/25 03:16:44 INFO DAGScheduler: Registering RDD 18 (reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224) as input to shuffle 2
+21/10/25 03:16:44 INFO DAGScheduler: Got job 5 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224) with 1 output partitions
+21/10/25 03:16:44 INFO DAGScheduler: Final stage: ResultStage 8 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224)
+21/10/25 03:16:44 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+21/10/25 03:16:44 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 7)
+21/10/25 03:16:44 INFO DAGScheduler: Submitting ShuffleMapStage 7 (PairwiseRDD[18] at reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224), which has no missing parents
+21/10/25 03:16:44 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 13.5 KiB, free 355.1 MiB)
+21/10/25 03:16:44 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 7.7 KiB, free 355.1 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 172.31.28.67:37093 (size: 7.7 KiB, free: 355.7 MiB)
+21/10/25 03:16:44 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:44 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 7 (PairwiseRDD[18] at reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:44 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks resource profile 0
+21/10/25 03:16:44 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 7) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:16:44 INFO Executor: Running task 0.0 in stage 7.0 (TID 7)
+21/10/25 03:16:44 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:16:44 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 172.31.28.67:37093 in memory (size: 6.0 KiB, free: 355.7 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Removed broadcast_11_piece2 on 172.31.28.67:37093 in memory (size: 2.5 MiB, free: 358.2 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Removed broadcast_11_piece1 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 362.2 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 172.31.28.67:37093 in memory (size: 4.0 MiB, free: 366.2 MiB)
+21/10/25 03:16:44 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 172.31.28.67:37093 in memory (size: 7.6 KiB, free: 366.2 MiB)
+21/10/25 03:16:46 INFO PythonRunner: Times: total = 2284, boot = -524, init = 526, finish = 2282
+21/10/25 03:16:46 INFO Executor: Finished task 0.0 in stage 7.0 (TID 7). 1611 bytes result sent to driver
+21/10/25 03:16:46 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 7) in 2296 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:46 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+21/10/25 03:16:46 INFO DAGScheduler: ShuffleMapStage 7 (reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224) finished in 2.302 s
+21/10/25 03:16:46 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:16:46 INFO DAGScheduler: running: Set()
+21/10/25 03:16:46 INFO DAGScheduler: waiting: Set(ResultStage 8)
+21/10/25 03:16:46 INFO DAGScheduler: failed: Set()
+21/10/25 03:16:46 INFO DAGScheduler: Submitting ResultStage 8 (PythonRDD[21] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224), which has no missing parents
+21/10/25 03:16:46 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 9.5 KiB, free 365.6 MiB)
+21/10/25 03:16:46 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 5.6 KiB, free 365.6 MiB)
+21/10/25 03:16:46 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 172.31.28.67:37093 (size: 5.6 KiB, free: 366.2 MiB)
+21/10/25 03:16:46 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:46 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (PythonRDD[21] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:46 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks resource profile 0
+21/10/25 03:16:46 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 8) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:16:46 INFO Executor: Running task 0.0 in stage 8.0 (TID 8)
+21/10/25 03:16:46 INFO ShuffleBlockFetcherIterator: Getting 1 (810.7 KiB) non-empty blocks including 1 (810.7 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:16:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:16:47 INFO PythonRunner: Times: total = 46, boot = -12, init = 14, finish = 44
+21/10/25 03:16:47 INFO Executor: Finished task 0.0 in stage 8.0 (TID 8). 996470 bytes result sent to driver
+21/10/25 03:16:47 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 8) in 92 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:47 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+21/10/25 03:16:47 INFO DAGScheduler: ResultStage 8 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224) finished in 0.099 s
+21/10/25 03:16:47 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:47 INFO TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+21/10/25 03:16:47 INFO DAGScheduler: Job 5 finished: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:224, took 2.405728 s
+21/10/25 03:16:47 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 312.0 B, free 365.6 MiB)
+21/10/25 03:16:47 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 172.31.28.67:37093 in memory (size: 7.7 KiB, free: 366.2 MiB)
+21/10/25 03:16:47 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 172.31.28.67:37093 in memory (size: 5.6 KiB, free: 366.2 MiB)
+21/10/25 03:16:47 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 719.8 KiB, free 365.0 MiB)
+21/10/25 03:16:47 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 172.31.28.67:37093 (size: 719.8 KiB, free: 365.5 MiB)
+21/10/25 03:16:47 INFO SparkContext: Created broadcast 14 from broadcast at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:47 INFO SparkContext: Starting job: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233
+21/10/25 03:16:47 INFO DAGScheduler: Registering RDD 23 (reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233) as input to shuffle 3
+21/10/25 03:16:47 INFO DAGScheduler: Got job 6 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233) with 1 output partitions
+21/10/25 03:16:47 INFO DAGScheduler: Final stage: ResultStage 10 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233)
+21/10/25 03:16:47 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 9)
+21/10/25 03:16:47 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 9)
+21/10/25 03:16:47 INFO DAGScheduler: Submitting ShuffleMapStage 9 (PairwiseRDD[23] at reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233), which has no missing parents
+21/10/25 03:16:47 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 13.5 KiB, free 365.0 MiB)
+21/10/25 03:16:47 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 7.7 KiB, free 364.9 MiB)
+21/10/25 03:16:47 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 172.31.28.67:37093 (size: 7.7 KiB, free: 365.5 MiB)
+21/10/25 03:16:47 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:47 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 9 (PairwiseRDD[23] at reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:47 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks resource profile 0
+21/10/25 03:16:47 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 9) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4571 bytes) taskResourceAssignments Map()
+21/10/25 03:16:47 INFO Executor: Running task 0.0 in stage 9.0 (TID 9)
+21/10/25 03:16:47 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_train.csv:0+22792726
+21/10/25 03:16:48 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 172.31.28.67:37093 in memory (size: 719.8 KiB, free: 366.2 MiB)
+21/10/25 03:16:49 INFO PythonRunner: Times: total = 2231, boot = -237, init = 239, finish = 2229
+21/10/25 03:16:49 INFO Executor: Finished task 0.0 in stage 9.0 (TID 9). 1611 bytes result sent to driver
+21/10/25 03:16:49 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 9) in 2241 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:49 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+21/10/25 03:16:49 INFO DAGScheduler: ShuffleMapStage 9 (reduceByKey at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233) finished in 2.247 s
+21/10/25 03:16:49 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:16:49 INFO DAGScheduler: running: Set()
+21/10/25 03:16:49 INFO DAGScheduler: waiting: Set(ResultStage 10)
+21/10/25 03:16:49 INFO DAGScheduler: failed: Set()
+21/10/25 03:16:49 INFO DAGScheduler: Submitting ResultStage 10 (PythonRDD[26] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233), which has no missing parents
+21/10/25 03:16:49 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 9.5 KiB, free 365.6 MiB)
+21/10/25 03:16:49 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 5.6 KiB, free 365.6 MiB)
+21/10/25 03:16:49 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 172.31.28.67:37093 (size: 5.6 KiB, free: 366.2 MiB)
+21/10/25 03:16:49 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 10 (PythonRDD[26] at collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:49 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks resource profile 0
+21/10/25 03:16:49 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 10) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:16:49 INFO Executor: Running task 0.0 in stage 10.0 (TID 10)
+21/10/25 03:16:49 INFO ShuffleBlockFetcherIterator: Getting 1 (343.8 KiB) non-empty blocks including 1 (343.8 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:16:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:16:49 INFO PythonRunner: Times: total = 20, boot = -10, init = 11, finish = 19
+21/10/25 03:16:49 INFO Executor: Finished task 0.0 in stage 10.0 (TID 10). 455115 bytes result sent to driver
+21/10/25 03:16:49 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 10) in 64 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:16:49 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+21/10/25 03:16:49 INFO DAGScheduler: ResultStage 10 (collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233) finished in 0.070 s
+21/10/25 03:16:49 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:16:49 INFO TaskSchedulerImpl: Killing all running tasks in stage 10: Stage finished
+21/10/25 03:16:49 INFO DAGScheduler: Job 6 finished: collectAsMap at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:233, took 2.322786 s
+21/10/25 03:16:49 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 312.0 B, free 365.6 MiB)
+21/10/25 03:16:49 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 333.8 KiB, free 365.3 MiB)
+21/10/25 03:16:49 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 172.31.28.67:37093 (size: 333.8 KiB, free: 365.9 MiB)
+21/10/25 03:16:49 INFO SparkContext: Created broadcast 17 from broadcast at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 312.0 B, free 365.3 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 4.0 MiB, free 361.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 361.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece1 stored as bytes in memory (estimated size 4.0 MiB, free 357.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece1 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 357.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece2 stored as bytes in memory (estimated size 4.0 MiB, free 353.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece2 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 353.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece3 stored as bytes in memory (estimated size 4.0 MiB, free 349.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece3 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 349.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece4 stored as bytes in memory (estimated size 4.0 MiB, free 345.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece4 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 345.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece5 stored as bytes in memory (estimated size 4.0 MiB, free 341.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece5 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 341.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece6 stored as bytes in memory (estimated size 4.0 MiB, free 337.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece6 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 337.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece7 stored as bytes in memory (estimated size 4.0 MiB, free 333.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece7 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 333.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece8 stored as bytes in memory (estimated size 4.0 MiB, free 329.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece8 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 329.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece9 stored as bytes in memory (estimated size 4.0 MiB, free 325.3 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece9 in memory on 172.31.28.67:37093 (size: 4.0 MiB, free: 325.9 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_18_piece10 stored as bytes in memory (estimated size 3.6 MiB, free 321.7 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_18_piece10 in memory on 172.31.28.67:37093 (size: 3.6 MiB, free: 322.3 MiB)
+21/10/25 03:16:58 INFO SparkContext: Created broadcast 18 from broadcast at NativeMethodAccessorImpl.java:0
+21/10/25 03:16:58 INFO SparkContext: Starting job: max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129
+21/10/25 03:16:58 INFO DAGScheduler: Got job 7 (max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129) with 1 output partitions
+21/10/25 03:16:58 INFO DAGScheduler: Final stage: ResultStage 11 (max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129)
+21/10/25 03:16:58 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:16:58 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:16:58 INFO DAGScheduler: Submitting ResultStage 11 (PythonRDD[28] at max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129), which has no missing parents
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 8.5 KiB, free 321.7 MiB)
+21/10/25 03:16:58 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 321.7 MiB)
+21/10/25 03:16:58 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 172.31.28.67:37093 (size: 5.1 KiB, free: 322.3 MiB)
+21/10/25 03:16:58 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:16:58 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (PythonRDD[28] at max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:16:58 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks resource profile 0
+21/10/25 03:16:58 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 11) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4583 bytes) taskResourceAssignments Map()
+21/10/25 03:16:58 INFO Executor: Running task 0.0 in stage 11.0 (TID 11)
+21/10/25 03:16:58 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_val_in.csv:0+6676095
+21/10/25 03:18:35 INFO PythonRunner: Times: total = 96937, boot = -9282, init = 9886, finish = 96333
+21/10/25 03:18:35 INFO MemoryStore: Block rdd_27_0 stored as values in memory (estimated size 4.2 MiB, free 317.5 MiB)
+21/10/25 03:18:35 INFO BlockManagerInfo: Added rdd_27_0 in memory on 172.31.28.67:37093 (size: 4.2 MiB, free: 318.1 MiB)
+21/10/25 03:18:35 INFO PythonRunner: Times: total = 210, boot = 100, init = 2, finish = 108
+21/10/25 03:18:35 INFO Executor: Finished task 0.0 in stage 11.0 (TID 11). 1404 bytes result sent to driver
+21/10/25 03:18:35 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 11) in 97162 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:18:35 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+21/10/25 03:18:35 INFO DAGScheduler: ResultStage 11 (max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129) finished in 97.167 s
+21/10/25 03:18:35 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:18:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+21/10/25 03:18:35 INFO DAGScheduler: Job 7 finished: max at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:129, took 97.172289 s
+21/10/25 03:18:35 INFO SparkContext: Starting job: min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130
+21/10/25 03:18:35 INFO DAGScheduler: Got job 8 (min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130) with 1 output partitions
+21/10/25 03:18:35 INFO DAGScheduler: Final stage: ResultStage 12 (min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130)
+21/10/25 03:18:35 INFO DAGScheduler: Parents of final stage: List()
+21/10/25 03:18:35 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:18:35 INFO DAGScheduler: Submitting ResultStage 12 (PythonRDD[29] at min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130), which has no missing parents
+21/10/25 03:18:35 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 8.5 KiB, free 317.5 MiB)
+21/10/25 03:18:35 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 317.5 MiB)
+21/10/25 03:18:35 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 172.31.28.67:37093 (size: 5.1 KiB, free: 318.1 MiB)
+21/10/25 03:18:35 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:18:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (PythonRDD[29] at min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130) (first 15 tasks are for partitions Vector(0))
+21/10/25 03:18:35 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks resource profile 0
+21/10/25 03:18:35 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 12) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4583 bytes) taskResourceAssignments Map()
+21/10/25 03:18:35 INFO Executor: Running task 0.0 in stage 12.0 (TID 12)
+21/10/25 03:18:35 INFO BlockManager: Found block rdd_27_0 locally
+21/10/25 03:18:36 INFO PythonRunner: Times: total = 112, boot = -31, init = 32, finish = 111
+21/10/25 03:18:36 INFO Executor: Finished task 0.0 in stage 12.0 (TID 12). 1404 bytes result sent to driver
+21/10/25 03:18:36 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 12) in 118 ms on 172.31.28.67 (executor driver) (1/1)
+21/10/25 03:18:36 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+21/10/25 03:18:36 INFO DAGScheduler: ResultStage 12 (min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130) finished in 0.124 s
+21/10/25 03:18:36 INFO DAGScheduler: Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:18:36 INFO TaskSchedulerImpl: Killing all running tasks in stage 12: Stage finished
+21/10/25 03:18:36 INFO DAGScheduler: Job 8 finished: min at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:130, took 0.126961 s
+21/10/25 03:18:36 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 172.31.28.67:37093 in memory (size: 5.6 KiB, free: 318.1 MiB)
+21/10/25 03:18:36 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 172.31.28.67:37093 in memory (size: 333.8 KiB, free: 318.5 MiB)
+21/10/25 03:18:36 INFO BlockManagerInfo: Removed broadcast_20_piece0 on 172.31.28.67:37093 in memory (size: 5.1 KiB, free: 318.5 MiB)
+21/10/25 03:18:36 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 172.31.28.67:37093 in memory (size: 7.7 KiB, free: 318.5 MiB)
+21/10/25 03:18:36 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 172.31.28.67:37093 in memory (size: 5.1 KiB, free: 318.5 MiB)
+21/10/25 03:18:36 INFO SparkContext: Starting job: mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32
+21/10/25 03:18:36 INFO DAGScheduler: Registering RDD 34 (join at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:137) as input to shuffle 4
+21/10/25 03:18:36 INFO DAGScheduler: Got job 9 (mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32) with 2 output partitions
+21/10/25 03:18:36 INFO DAGScheduler: Final stage: ResultStage 14 (mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32)
+21/10/25 03:18:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+21/10/25 03:18:36 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 13)
+21/10/25 03:18:36 INFO DAGScheduler: Submitting ShuffleMapStage 13 (PairwiseRDD[34] at join at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:137), which has no missing parents
+21/10/25 03:18:36 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 18.0 KiB, free 317.9 MiB)
+21/10/25 03:18:36 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 8.6 KiB, free 317.9 MiB)
+21/10/25 03:18:36 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 172.31.28.67:37093 (size: 8.6 KiB, free: 318.5 MiB)
+21/10/25 03:18:36 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:18:36 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 13 (PairwiseRDD[34] at join at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:137) (first 15 tasks are for partitions Vector(0, 1))
+21/10/25 03:18:36 INFO TaskSchedulerImpl: Adding task set 13.0 with 2 tasks resource profile 0
+21/10/25 03:18:36 INFO TaskSetManager: Starting task 1.0 in stage 13.0 (TID 13) (172.31.28.67, executor driver, partition 1, PROCESS_LOCAL, 4681 bytes) taskResourceAssignments Map()
+21/10/25 03:18:36 INFO Executor: Running task 1.0 in stage 13.0 (TID 13)
+21/10/25 03:18:36 INFO BlockManager: Found block rdd_27_0 locally
+21/10/25 03:18:36 INFO PythonRunner: Times: total = 259, boot = -80, init = 81, finish = 258
+21/10/25 03:18:37 INFO PythonRunner: Times: total = 1346, boot = 3, init = 2, finish = 1341
+21/10/25 03:18:37 INFO Executor: Finished task 1.0 in stage 13.0 (TID 13). 1569 bytes result sent to driver
+21/10/25 03:18:37 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 14) (172.31.28.67, executor driver, partition 0, PROCESS_LOCAL, 4681 bytes) taskResourceAssignments Map()
+21/10/25 03:18:37 INFO TaskSetManager: Finished task 1.0 in stage 13.0 (TID 13) in 1360 ms on 172.31.28.67 (executor driver) (1/2)
+21/10/25 03:18:37 INFO Executor: Running task 0.0 in stage 13.0 (TID 14)
+21/10/25 03:18:37 INFO HadoopRDD: Input split: file:/mnt/ro/data2/students/sub1/ddd_v1_c_XQrl_695762/asn556420_14/asn556421_1/asnlib.0/publicdata/yelp_val_in.csv:0+6676095
+21/10/25 03:18:38 INFO PythonRunner: Times: total = 609, boot = -1101, init = 1103, finish = 607
+21/10/25 03:18:39 INFO PythonRunner: Times: total = 1670, boot = -12, init = 22, finish = 1660
+21/10/25 03:18:39 INFO Executor: Finished task 0.0 in stage 13.0 (TID 14). 1569 bytes result sent to driver
+21/10/25 03:18:39 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 14) in 1692 ms on 172.31.28.67 (executor driver) (2/2)
+21/10/25 03:18:39 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+21/10/25 03:18:39 INFO DAGScheduler: ShuffleMapStage 13 (join at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:137) finished in 3.057 s
+21/10/25 03:18:39 INFO DAGScheduler: looking for newly runnable stages
+21/10/25 03:18:39 INFO DAGScheduler: running: Set()
+21/10/25 03:18:39 INFO DAGScheduler: waiting: Set(ResultStage 14)
+21/10/25 03:18:39 INFO DAGScheduler: failed: Set()
+21/10/25 03:18:39 INFO DAGScheduler: Submitting ResultStage 14 (PythonRDD[37] at mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32), which has no missing parents
+21/10/25 03:18:39 INFO MemoryStore: Block broadcast_22 stored as values in memory (estimated size 12.3 KiB, free 317.9 MiB)
+21/10/25 03:18:39 INFO MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 317.8 MiB)
+21/10/25 03:18:39 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 172.31.28.67:37093 (size: 6.7 KiB, free: 318.5 MiB)
+21/10/25 03:18:39 INFO SparkContext: Created broadcast 22 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:18:39 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 14 (PythonRDD[37] at mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32) (first 15 tasks are for partitions Vector(0, 1))
+21/10/25 03:18:39 INFO TaskSchedulerImpl: Adding task set 14.0 with 2 tasks resource profile 0
+21/10/25 03:18:39 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 15) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:18:39 INFO Executor: Running task 0.0 in stage 14.0 (TID 15)
+21/10/25 03:18:39 INFO ShuffleBlockFetcherIterator: Getting 2 (6.1 MiB) non-empty blocks including 2 (6.1 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:18:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:18:40 INFO PythonRunner: Times: total = 855, boot = -1078, init = 1080, finish = 853
+21/10/25 03:18:40 INFO Executor: Finished task 0.0 in stage 14.0 (TID 15). 1843 bytes result sent to driver
+21/10/25 03:18:40 INFO TaskSetManager: Starting task 1.0 in stage 14.0 (TID 16) (172.31.28.67, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:18:40 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 15) in 865 ms on 172.31.28.67 (executor driver) (1/2)
+21/10/25 03:18:40 INFO Executor: Running task 1.0 in stage 14.0 (TID 16)
+21/10/25 03:18:40 INFO ShuffleBlockFetcherIterator: Getting 2 (6.1 MiB) non-empty blocks including 2 (6.1 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:18:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:18:41 INFO PythonRunner: Times: total = 938, boot = -879, init = 881, finish = 936
+21/10/25 03:18:41 INFO Executor: Finished task 1.0 in stage 14.0 (TID 16). 1843 bytes result sent to driver
+21/10/25 03:18:41 INFO TaskSetManager: Finished task 1.0 in stage 14.0 (TID 16) in 946 ms on 172.31.28.67 (executor driver) (2/2)
+21/10/25 03:18:41 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+21/10/25 03:18:41 INFO DAGScheduler: ResultStage 14 (mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32) finished in 1.815 s
+21/10/25 03:18:41 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:18:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+21/10/25 03:18:41 INFO DAGScheduler: Job 9 finished: mean at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:32, took 4.878651 s
+21/10/25 03:18:41 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37
+21/10/25 03:18:41 INFO DAGScheduler: Got job 10 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37) with 2 output partitions
+21/10/25 03:18:41 INFO DAGScheduler: Final stage: ResultStage 16 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37)
+21/10/25 03:18:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 15)
+21/10/25 03:18:41 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:18:41 INFO DAGScheduler: Submitting ResultStage 16 (PythonRDD[38] at collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37), which has no missing parents
+21/10/25 03:18:41 INFO MemoryStore: Block broadcast_23 stored as values in memory (estimated size 10.6 KiB, free 317.8 MiB)
+21/10/25 03:18:41 INFO MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 317.8 MiB)
+21/10/25 03:18:41 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 172.31.28.67:37093 (size: 6.0 KiB, free: 318.4 MiB)
+21/10/25 03:18:41 INFO SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:18:41 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 16 (PythonRDD[38] at collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37) (first 15 tasks are for partitions Vector(0, 1))
+21/10/25 03:18:41 INFO TaskSchedulerImpl: Adding task set 16.0 with 2 tasks resource profile 0
+21/10/25 03:18:41 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 17) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:18:41 INFO Executor: Running task 0.0 in stage 16.0 (TID 17)
+21/10/25 03:18:41 INFO ShuffleBlockFetcherIterator: Getting 2 (6.1 MiB) non-empty blocks including 2 (6.1 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:18:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:18:41 INFO PythonRunner: Times: total = 603, boot = -970, init = 974, finish = 599
+21/10/25 03:18:41 INFO MemoryStore: Block taskresult_17 stored as bytes in memory (estimated size 5.0 MiB, free 312.8 MiB)
+21/10/25 03:18:41 INFO BlockManagerInfo: Added taskresult_17 in memory on 172.31.28.67:37093 (size: 5.0 MiB, free: 313.4 MiB)
+21/10/25 03:18:41 INFO Executor: Finished task 0.0 in stage 16.0 (TID 17). 5276437 bytes result sent via BlockManager)
+21/10/25 03:18:41 INFO TaskSetManager: Starting task 1.0 in stage 16.0 (TID 18) (172.31.28.67, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:18:41 INFO Executor: Running task 1.0 in stage 16.0 (TID 18)
+21/10/25 03:18:41 INFO ShuffleBlockFetcherIterator: Getting 2 (6.1 MiB) non-empty blocks including 2 (6.1 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:18:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:18:41 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 17) in 634 ms on 172.31.28.67 (executor driver) (1/2)
+21/10/25 03:18:41 INFO BlockManagerInfo: Removed taskresult_17 on 172.31.28.67:37093 in memory (size: 5.0 MiB, free: 318.4 MiB)
+21/10/25 03:18:42 INFO BlockManagerInfo: Removed broadcast_21_piece0 on 172.31.28.67:37093 in memory (size: 8.6 KiB, free: 318.5 MiB)
+21/10/25 03:18:42 INFO BlockManagerInfo: Removed broadcast_22_piece0 on 172.31.28.67:37093 in memory (size: 6.7 KiB, free: 318.5 MiB)
+21/10/25 03:18:42 INFO PythonRunner: Times: total = 604, boot = -647, init = 652, finish = 599
+21/10/25 03:18:42 INFO MemoryStore: Block taskresult_18 stored as bytes in memory (estimated size 5.0 MiB, free 312.8 MiB)
+21/10/25 03:18:42 INFO BlockManagerInfo: Added taskresult_18 in memory on 172.31.28.67:37093 (size: 5.0 MiB, free: 313.4 MiB)
+21/10/25 03:18:42 INFO Executor: Finished task 1.0 in stage 16.0 (TID 18). 5295073 bytes result sent via BlockManager)
+21/10/25 03:18:42 INFO TaskSetManager: Finished task 1.0 in stage 16.0 (TID 18) in 636 ms on 172.31.28.67 (executor driver) (2/2)
+21/10/25 03:18:42 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+21/10/25 03:18:42 INFO BlockManagerInfo: Removed taskresult_18 on 172.31.28.67:37093 in memory (size: 5.0 MiB, free: 318.5 MiB)
+21/10/25 03:18:42 INFO DAGScheduler: ResultStage 16 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37) finished in 1.262 s
+21/10/25 03:18:42 INFO DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:18:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 16: Stage finished
+21/10/25 03:18:42 INFO DAGScheduler: Job 10 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:37, took 1.264973 s
+21/10/25 03:18:42 INFO SparkContext: Starting job: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143
+21/10/25 03:18:42 INFO DAGScheduler: Got job 11 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143) with 2 output partitions
+21/10/25 03:18:42 INFO DAGScheduler: Final stage: ResultStage 18 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143)
+21/10/25 03:18:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 17)
+21/10/25 03:18:42 INFO DAGScheduler: Missing parents: List()
+21/10/25 03:18:42 INFO DAGScheduler: Submitting ResultStage 18 (PythonRDD[39] at collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143), which has no missing parents
+21/10/25 03:18:42 INFO MemoryStore: Block broadcast_24 stored as values in memory (estimated size 11.2 KiB, free 317.9 MiB)
+21/10/25 03:18:42 INFO MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 6.3 KiB, free 317.9 MiB)
+21/10/25 03:18:42 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 172.31.28.67:37093 (size: 6.3 KiB, free: 318.5 MiB)
+21/10/25 03:18:42 INFO SparkContext: Created broadcast 24 from broadcast at DAGScheduler.scala:1388
+21/10/25 03:18:42 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 18 (PythonRDD[39] at collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143) (first 15 tasks are for partitions Vector(0, 1))
+21/10/25 03:18:42 INFO TaskSchedulerImpl: Adding task set 18.0 with 2 tasks resource profile 0
+21/10/25 03:18:42 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 19) (172.31.28.67, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:18:42 INFO Executor: Running task 0.0 in stage 18.0 (TID 19)
+21/10/25 03:18:42 INFO ShuffleBlockFetcherIterator: Getting 2 (6.1 MiB) non-empty blocks including 2 (6.1 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:18:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:18:43 INFO PythonRunner: Times: total = 624, boot = -856, init = 857, finish = 623
+21/10/25 03:18:43 INFO MemoryStore: Block taskresult_19 stored as bytes in memory (estimated size 4.8 MiB, free 313.0 MiB)
+21/10/25 03:18:43 INFO BlockManagerInfo: Added taskresult_19 in memory on 172.31.28.67:37093 (size: 4.8 MiB, free: 313.6 MiB)
+21/10/25 03:18:43 INFO Executor: Finished task 0.0 in stage 18.0 (TID 19). 5062709 bytes result sent via BlockManager)
+21/10/25 03:18:43 INFO TaskSetManager: Starting task 1.0 in stage 18.0 (TID 20) (172.31.28.67, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+21/10/25 03:18:43 INFO Executor: Running task 1.0 in stage 18.0 (TID 20)
+21/10/25 03:18:43 INFO ShuffleBlockFetcherIterator: Getting 2 (6.1 MiB) non-empty blocks including 2 (6.1 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/10/25 03:18:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/10/25 03:18:43 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 19) in 652 ms on 172.31.28.67 (executor driver) (1/2)
+21/10/25 03:18:43 INFO BlockManagerInfo: Removed taskresult_19 on 172.31.28.67:37093 in memory (size: 4.8 MiB, free: 318.5 MiB)
+21/10/25 03:18:43 INFO PythonRunner: Times: total = 623, boot = -867, init = 868, finish = 622
+21/10/25 03:18:43 INFO MemoryStore: Block taskresult_20 stored as bytes in memory (estimated size 4.8 MiB, free 313.0 MiB)
+21/10/25 03:18:43 INFO BlockManagerInfo: Added taskresult_20 in memory on 172.31.28.67:37093 (size: 4.8 MiB, free: 313.6 MiB)
+21/10/25 03:18:43 INFO Executor: Finished task 1.0 in stage 18.0 (TID 20). 5080544 bytes result sent via BlockManager)
+21/10/25 03:18:43 INFO TaskSetManager: Finished task 1.0 in stage 18.0 (TID 20) in 652 ms on 172.31.28.67 (executor driver) (2/2)
+21/10/25 03:18:43 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+21/10/25 03:18:43 INFO DAGScheduler: ResultStage 18 (collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143) finished in 1.294 s
+21/10/25 03:18:43 INFO BlockManagerInfo: Removed taskresult_20 on 172.31.28.67:37093 in memory (size: 4.8 MiB, free: 318.5 MiB)
+21/10/25 03:18:43 INFO DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+21/10/25 03:18:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 18: Stage finished
+21/10/25 03:18:43 INFO DAGScheduler: Job 11 finished: collect at /mnt/data2/students/sub1/ccc_v1_g_1c1d2_33551/asn556420_14/asn556421_1/1575422/3/work/task2_1.py:143, took 1.297520 s
+RMSE:  3.6537368549992433
+ABS Diff:  {'0-1': 12, '1-2': 469, '2-3': 10285, '3-4': 104534, '>4': 26744}
+Duration:  130.3854100704193
+21/10/25 03:18:44 INFO SparkUI: Stopped Spark web UI at http://172.31.28.67:4040
+21/10/25 03:18:44 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/10/25 03:18:44 INFO MemoryStore: MemoryStore cleared
+21/10/25 03:18:44 INFO BlockManager: BlockManager stopped
+21/10/25 03:18:44 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/10/25 03:18:44 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/10/25 03:18:44 INFO SparkContext: Successfully stopped SparkContext
+21/10/25 03:18:44 INFO ShutdownHookManager: Shutdown hook called
+21/10/25 03:18:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-1a5a108a-b897-4c39-9b72-e6cc71f81266
+21/10/25 03:18:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-5c6b4767-34ce-439c-9881-d804a4281e8f/pyspark-029dc402-1901-4246-b751-8fa2ae90585d
+21/10/25 03:18:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-5c6b4767-34ce-439c-9881-d804a4281e8f
+=======================================================
+task1 validation dataset pass
+=======================================================
+=======================================================
+task2_1 validation dataset pass
+=======================================================

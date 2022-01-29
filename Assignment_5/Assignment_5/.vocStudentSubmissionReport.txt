@@ -1,0 +1,123 @@
+
+[Executed at: Fri Nov 12 20:16:13 PST 2021]
+
+2021-11-12 20:15:47 WARN  Utils:66 - Your hostname, ip-172-31-29-110 resolves to a loopback address: 127.0.0.1; using 172.31.29.110 instead (on interface ens5)
+2021-11-12 20:15:47 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2021-11-12 20:15:47 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+0 0.0
+1 0.0
+2 0.0
+3 0.0
+4 0.0
+5 0.0
+6 0.0
+7 0.0
+8 0.0
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 0.0
+16 0.0
+17 0.0
+18 0.0
+19 0.0
+20 0.0
+21 0.0
+22 0.0
+23 0.0
+24 0.0
+25 0.0
+26 0.0
+27 0.0
+28 0.0
+29 0.0
+Duration:  10.254074335098267
+=======================================================
+task1 pass
+=======================================================
+2021-11-12 20:15:57 WARN  Utils:66 - Your hostname, ip-172-31-29-110 resolves to a loopback address: 127.0.0.1; using 172.31.29.110 instead (on interface ens5)
+2021-11-12 20:15:57 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2021-11-12 20:15:57 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+ground 300 estimation 371
+ground 300 estimation 230
+ground 300 estimation 294
+ground 300 estimation 236
+ground 300 estimation 358
+ground 300 estimation 262
+ground 300 estimation 284
+ground 300 estimation 224
+ground 300 estimation 294
+ground 300 estimation 390
+ground 300 estimation 185
+ground 300 estimation 390
+ground 300 estimation 320
+ground 300 estimation 275
+ground 300 estimation 320
+ground 300 estimation 249
+ground 300 estimation 320
+ground 300 estimation 262
+ground 300 estimation 294
+ground 300 estimation 236
+ground 300 estimation 307
+ground 300 estimation 262
+ground 300 estimation 332
+ground 299 estimation 409
+ground 300 estimation 217
+ground 300 estimation 326
+ground 300 estimation 358
+ground 300 estimation 284
+ground 300 estimation 224
+ground 300 estimation 252
+0.9739971107900878
+Duration:  7.951338529586792
+=======================================================
+task2 pass
+=======================================================
+2021-11-12 20:16:05 WARN  Utils:66 - Your hostname, ip-172-31-29-110 resolves to a loopback address: 127.0.0.1; using 172.31.29.110 instead (on interface ens5)
+2021-11-12 20:16:05 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2021-11-12 20:16:05 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+seqnum,0_id,20_id,40_id,60_id,80_id
+0 4evFVSzvArrYXDqlX9XYUg Pf17agM7X0NvHJQeiACL5w ylen-tTVGkpFDJ1fyadoew 0fDbwoLXmQgZsy0v6uFnow YYyQ7qPPU_TXmaQ7Q4u6nA
+1 DoNXNmBDwMwdsCjFQWL42A Pf17agM7X0NvHJQeiACL5w ylen-tTVGkpFDJ1fyadoew 0fDbwoLXmQgZsy0v6uFnow IA1DpmcRA58xusm6mwDcWg
+2 ujmsjz3GGea6XxTszxM_Sg Pf17agM7X0NvHJQeiACL5w AyeWnS9BeV3Zmm_v_BUGbw 0fDbwoLXmQgZsy0v6uFnow IA1DpmcRA58xusm6mwDcWg
+3 ujmsjz3GGea6XxTszxM_Sg Pf17agM7X0NvHJQeiACL5w uM0OjbOlkr0p4ZhmviA8aQ 4-6nC7xdemd59a5eGlOEGA ZTv9ByQamg-go_Cp2gUz8w
+4 ujmsjz3GGea6XxTszxM_Sg PZtZpJh1mJe2KNsSYoFokQ uM0OjbOlkr0p4ZhmviA8aQ 4-6nC7xdemd59a5eGlOEGA dY5U0LUbOQGp5Zh9oWYMRw
+5 ujmsjz3GGea6XxTszxM_Sg irve6L5r-rUe1f9KQpaNBg uM0OjbOlkr0p4ZhmviA8aQ 4-6nC7xdemd59a5eGlOEGA dY5U0LUbOQGp5Zh9oWYMRw
+6 ujmsjz3GGea6XxTszxM_Sg L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ 4-6nC7xdemd59a5eGlOEGA o-NMu4Q9YlNlbNqEHUnX6g
+7 S6KPGvcmODDu9CjQypNFcA L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA o-NMu4Q9YlNlbNqEHUnX6g
+8 S6KPGvcmODDu9CjQypNFcA L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA o-NMu4Q9YlNlbNqEHUnX6g
+9 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA o-NMu4Q9YlNlbNqEHUnX6g
+10 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA o-NMu4Q9YlNlbNqEHUnX6g
+11 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+12 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+13 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+14 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+15 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+16 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+17 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+18 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+19 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+20 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+21 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+22 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+23 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+24 FEOdMbB6Cvr0UomUSEKxnw L96DFtaLbZhmOJVHKhtqPA uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+25 FEOdMbB6Cvr0UomUSEKxnw cQCvKpOZzcjyqOSvMOo1lg uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+26 FEOdMbB6Cvr0UomUSEKxnw cQCvKpOZzcjyqOSvMOo1lg uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+27 FEOdMbB6Cvr0UomUSEKxnw cQCvKpOZzcjyqOSvMOo1lg uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+28 FEOdMbB6Cvr0UomUSEKxnw cQCvKpOZzcjyqOSvMOo1lg uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+29 FEOdMbB6Cvr0UomUSEKxnw cQCvKpOZzcjyqOSvMOo1lg uM0OjbOlkr0p4ZhmviA8aQ CPdy5JV2qngQJD0xwuKvuA z9uf9-0uX5Jh8-4Y5l2PQg
+Duration:  7.214087724685669
+=======================================================
+task3 pass
+=======================================================
+hw5.jar not found for task3
